@@ -9,7 +9,7 @@
     }
 
     .dropdown:hover {
-        top: 97px;
+        top: 165px;
     }
 
     nav {
@@ -23,6 +23,7 @@
     .site-nav p {
         margin: 0px 20px 0px 0px;
     }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -51,11 +52,37 @@
     }
 }
 
+#alternative-worlds-img {
+    max-width: 800px;
+    width: 80vw;
+}
+
+#cat-great-img {
+    max-width: 800px;
+    width: 80vw;
+
+}
+
+figcaption {
+    margin-top: 10px
+}
+
 img {
-    z-index: 10;
     max-height: 80vh;
     max-width: 300px;
     transition: all 0.5s ease;
+}
+
+.yt-player {
+    margin-top: 30px;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#yt-link-info::first-letter {
+    font-size: 1em;
+    font-weight: normal;
+
 }
 
 #main {
@@ -76,6 +103,16 @@ img {
     padding: 0px;
     margin: 0px;
     cursor: pointer;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.site-nav p::first-letter {
+    font-size: 1em;
+    font-weight: normal;
 }
 
 header {
@@ -112,10 +149,12 @@ figure {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.gallery-card {
     max-height: 400px;
     width: 300px;
 }
-
 
 body {
     display: flex;
@@ -175,7 +214,8 @@ h1 {
     background-color: #f0e1c0;
 }
 
-article {
+article,
+.gallery-intro {
     padding: 30px;
     background-color: #fffaf1;
 }
