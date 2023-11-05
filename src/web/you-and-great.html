@@ -49,21 +49,44 @@
                 </nav>
             </header>
             <article>
-                <h2>Obraz "Wielki ratuje alternatywne światy"</h2>
-                <p>
-                    Oto obraz autorstwa Anny Nowak (przysięgam ona na prawdę się tak nazywa) przedstawiający Wielkiego,
-                    który przniósł się do innego wszechświata, aby tam szerzyć swoje nauki. Jak dobrze wiemy nasz
-                    Wszechświat jest już doskonały i odkąd Wielki się w nim ujawnił, niczego mu nie potrzeba. Dlatego
-                    Wielki jako istota pełna dobroci postanowił ratować inne światy.
+                <h2>Ty i Wielki</h2>
+                <p>Witaj w zakładce Ty i Wielki gdzie możesz podzielić się z nami swoim doświadczeniem lub historią,
+                    jaką przeżyłeś z Wielkim lub jaką uważasz za wykonaną przez niego. Możesz także podzielić się z nami
+                    swoimi przemyśleniami na temat Wielkiego Jaworskiego.</p>
                 </p>
-                <figure>
-                    <img id="alternative-worlds-img" src="images/alternative-worlds.JPEG"
-                        alt="Obraz 'Wielki ratuje alternatywne światy'">
-                    <figcaption>
-                        Obraz "Wielki ratuje alternatywne światy"
-                    </figcaption>
-                </figure>
+                <form action="odbierz.php" method="post">
+                    <label for="name">Imię</label>
+                    <input type="text" id="name" name="name">
+                    <label for="surname">Nazwisko</label>
+                    <input type="text" id="surname" name="surname">
+                    <label for="birth-date">Data urodzenia</label>
+                    <input type="date" id="birth-date" name="birth-date">
+                    <p>Czy wierzysz w Wielkiego?</p>
+                    <label for="beliefs-yes">
+                        <input type="radio" id="beliefs-yes" name="beliefs">tak
+                    </label>
+                    <label for="beliefs-no">
+                        <input type="radio" id="beliefs-no" name="beliefs">nie
+                    </label>
+                    <label for="beliefs-idk">
+                        <input type="radio" id="beliefs-idk" name="beliefs">nie wiem
+                    </label>
+                    <label for="occupation">Jestem:</label>
+                    <select name="occupation" id="occupation">
+                        <option value="student">studentem</option>
+                        <option value="worker">pracownikiem</option>
+                        <option value="unemployed">bezrobotnym</option>
+                        <option value="other">inne</option>
+                    </select>
+                    <label for="story">Opisz swoją historię!</label>
+                    <textarea name="story" id="story" rows="10"></textarea>
+                    <div id="form-controls">
+                        <input type="submit" value="Wyślij">
+                        <input type="reset" value="Wyczyść">
+                    </div>
+                </form>
             </article>
+            <a href="#" id="back-to-top">powrót na górę strony</a>
             <footer>Tak, całe nasze życie kochaliśmy Wielkiego Jaworskiego i dalej to czujemy...</footer>
         </div>
     </div>
