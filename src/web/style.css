@@ -132,12 +132,10 @@ label {
 
 #alternative-worlds-img {
     max-width: 800px;
-    max-height: auto;
 }
 
 #cat-great-img {
     max-width: 800px;
-    max-height: auto;
 }
 
 figcaption {
@@ -377,4 +375,8 @@ td {
     margin: 0px 10px 0px 0px;
     animation: fadeInFromBottom 0.5s ease-in-out forwards;
     opacity: 0;
+}
+
+iframe {
+    border: none;
 }
