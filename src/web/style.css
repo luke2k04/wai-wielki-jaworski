@@ -68,6 +68,49 @@
     }
 }
 
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-button:active img,
+.gallery-button:focus img {
+    height: 80vh;
+    width: auto;
+}
+
+.gallery-button:active,
+.gallery-button:focus {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    cursor: default;
+}
+
+
+.gallery-button:active .close-img-button,
+.gallery-button:focus .close-img-button {
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 10vh;
+}
+
+.close-img-button {
+    display: none;
+    position: absolute;
+    background-color: #f0e1c0;
+    border: none;
+    cursor: pointer;
+}
+
 form p::first-letter {
     font-size: 1em;
     font-weight: normal;
@@ -97,13 +140,7 @@ label {
 }
 
 figcaption {
-    margin-top: 10px
-}
-
-img {
-    max-height: 80vh;
-    max-width: 300px;
-    transition: all 0.5s ease;
+    margin-top: 10px;
 }
 
 .yt-player {
@@ -120,14 +157,6 @@ img {
 
 #main {
     background-color: #fffaf1;
-}
-
-.gallery-button:active img,
-.gallery-button:focus img {
-    position: relative;
-    max-width: 50vw;
-    max-height: 80vh;
-    transition: all 0.5s ease;
 }
 
 .gallery-button {
